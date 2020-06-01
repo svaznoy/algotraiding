@@ -28,10 +28,10 @@ function bs() {
   function serveSass() {
     return src("./src/sass/**/*.sass", "./src/sass/**/*.scss")
         .pipe(sass())
-        .pipe(autoprefixer({
-            overrideBrowserslist: ['last 2 versions'],
-            cascade: false
-        }))
+        // .pipe(autoprefixer({
+        //     overrideBrowserslist: ['last 2 versions'],
+        //     cascade: false
+        // }))
         .pipe(dest("./src/css/"))
         .pipe(browserSync.stream());
 }

@@ -1,0 +1,72 @@
+.part
+    &-wrap
+        display: flex
+        flex-direction: column
+        align-items: center
+    &-title
+        font-family: 'Roboto', sans-serif
+        font-size: 2.571rem
+        font-weight: 300
+        &--bold
+            font-weight: 700
+    &-text
+        text-align: center
+        max-width: 24.85rem
+        font-weight: 300
+        font-family: 'Roboto-Light', sans-serif
+        font-size: 1.114rem
+        line-height: 24px
+    &-item
+        font-family: 'Roboto-Light', sans-serif
+        font-size: 1.714rem
+        font-weight: 300
+        &::before
+            content: ''
+            display: flex
+            margin: auto
+            margin-top: 2rem
+            margin-bottom: 2rem
+            width: 47px
+            height: 2px
+            transform: rotate(90deg)
+            background: $darken
+    .video
+        &__play
+            position: relative
+            margin: auto
+            cursor: pointer
+    &__video 
+        width: 100%
+        height: 100%
+        display: flex
+        margin: 0 auto
+        max-width: 67.37rem
+        min-height: 27.5rem  
+        background: $darken url(../img/videoimg.png) center no-repeat
+        margin-top: 5rem
+        margin-bottom: 3.8rem
+    &-subtitle
+        font-family: 'Roboto', sans-serif
+        font-size: 1.714rem
+        &__position
+            margin-bottom: 0.8rem
+        
+
+    &-answer
+        font-family: 'Roboto-Light', sans-serif
+        font-size: 1.142rem
+        text-align: center
+        max-width: 41rem
+        line-height: 24px
+        &__position
+            margin-bottom: 2.6rem
+
+    &__button
+        font-size: 1.214rem 
+        padding: 16px 44px
+        margin-bottom: 8.57rem   
+        
+
+          
+
+

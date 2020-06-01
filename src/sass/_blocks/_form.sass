@@ -1,0 +1,57 @@
+.form
+    position: relative
+    padding: 9.14rem 0
+    background: #031942  url('../img/keyboard.png') center no-repeat
+    background-size: cover
+    &::after
+        background: transparent
+        background-image: radial-gradient(circle 1152px at center, #03256c 0%, #061826 100%)
+        opacity: 0.8
+        content: ''
+        height: 100%
+        left: 0
+        position: absolute
+        top: 0
+        width: 100%
+    &-wrap
+        position: relative  
+        z-index: 99  
+    &__title
+        margin: auto
+        text-align: center
+        font-family: 'Roboto', sans-serif
+        font-size: 1.75rem
+        color: $light
+        max-width: 30rem
+        margin-bottom: 1.714rem
+    &__text
+        font-family: 'Roboto-Light', sans-serif
+        font-weight: 300
+        font-size: 1.142rem
+        color: $light
+        text-align: center
+        margin: auto  
+        max-width: 30rem  
+        margin-bottom: 3.214rem
+        line-height: 24px
+    &-main
+        text-align: center
+    &-group  
+    &-input
+        min-width: 359px
+        font-family: 'Roboto', sans-serif
+        background: $light
+        border-radius: 4px
+        font-weight: 500
+        font-size: 1.357rem
+        padding: 13px 0 13px 17px
+        &__position
+            margin-bottom: 1.614rem
+    &__button
+        min-width: 359px
+        display: inline-block
+        box-shadow: 0 12px 24px rgba($primary, 0.32)
+        font-size: 1.24rem
+        padding: 16px 0       
+
+        
