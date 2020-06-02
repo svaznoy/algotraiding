@@ -16,20 +16,23 @@
     &-block
         display: flex
         justify-content: start
-        &__image
+        align-items: center
+        &__upsize
             display: flex
-            justify-content: start
             align-items: flex-end
-            margin-bottom: 1.57rem
-            &--left
-                margin-right: 11.214rem
-            &-position
-                margin-right: 13.857rem
-
+            font-family: 'Roboto', sans-serif
+            font-size: 20rem
+            &--primary
+                font-family: 'Roboto', sans-serif
+                font-size: 14rem
+                color: $text-decoration
+       
         &__money
             flex-basis: 45%
             margin-right: 3rem 
         &__analize
+            display: flex
+            flex-direction: column
             margin-right: 1rem       
         &__text 
             font-family: 'Roboto', sans-serif
