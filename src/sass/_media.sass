@@ -48,7 +48,10 @@
                 justify-content: space-evenly
 @media screen and (max-width: 1110px)  
     .container
-        width: 95%    
+        width: 95% 
+    .result
+        &-wrap
+            justify-content: space-between       
     
 
 
@@ -102,7 +105,17 @@
                     
             &__item
         &__button
-            margin-bottom: 4rem              
+            margin-bottom: 4rem  
+    .result
+        &-wrap
+            flex-wrap: wrap
+         
+    .col-60
+        align-items: center
+        justify-content: center
+        flex-basis: 70%  
+    .col-40
+        flex-basis: 40%                           
 @media screen and (max-width: 892px)   
     .row
         flex-direction: column
