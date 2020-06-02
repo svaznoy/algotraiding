@@ -1,5 +1,6 @@
 @charset "UTF-8";
 .container {
+  width: 90%;
   max-width: 1201px;
   margin: auto; }
 
@@ -706,7 +707,7 @@ template {
     width: 47px;
     height: 2px;
     transform: rotate(90deg);
-    background: #0f1c2e; }
+    background: #eaf1f7; }
 
 .part .video__play {
   position: relative;
@@ -720,7 +721,7 @@ template {
   margin: 0 auto;
   max-width: 67.37rem;
   min-height: 27.5rem;
-  background: #0f1c2e url(../img/videoimg.png) center no-repeat;
+  background: url(../img/video.png) center no-repeat;
   margin-top: 5rem;
   margin-bottom: 3.8rem; }
 
@@ -742,6 +743,7 @@ template {
 .part__button {
   font-size: 1.214rem;
   padding: 16px 44px;
+  box-shadow: 0 12px 24px rgba(6, 57, 158, 0.32);
   margin-bottom: 8.57rem; }
 
 .format {
@@ -965,7 +967,8 @@ template {
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
     max-width: 39.542rem;
-    font-size: 1.219rem; }
+    font-size: 1.219rem;
+    box-shadow: 0 12px 24px rgba(6, 57, 158, 0.32); }
     .return-link__settings {
       padding: 16px 40px;
       font-weight: 700;
@@ -1120,3 +1123,7 @@ template {
     box-shadow: 0 12px 24px rgba(8, 66, 183, 0.32);
     font-size: 1.24rem;
     padding: 16px 43px; }
+
+@media screen and (max-width: 1290px) {
+  html {
+    font-size: 12px; } }
