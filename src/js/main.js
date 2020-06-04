@@ -18,4 +18,32 @@ $(document).ready(function() {
     }
 
 
+
+
+});
+
+$(document).ready(function () {
+  //initialize swiper when document ready
+  var mySwiper = new Swiper(".swiper", {
+    // Optional parameters
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+
+  var nextBtn = $(".swiper-button-next");
+  var prevBtn = $(".swiper-button-prev");
+  
+
+  //nextBtn.css("left", prevBtn.width() + 400);
+
 });

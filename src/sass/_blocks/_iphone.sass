@@ -1,0 +1,114 @@
+.slider
+    &-phone
+        background: $line
+        padding-top: 125px
+        
+        width: 100%
+        height: 100%
+        &-wrap
+        &__title
+            margin: 0 auto
+            max-width: 500px
+            text-align: center
+            font-size: 36px
+            font-weight: 300
+            line-height: 42px
+            font-family: 'Roboto-Light', sans-serif
+            font-weight: 300
+            margin-bottom: 15rem
+            
+            &_strong
+                font-weight: 700
+.block
+    position: relative
+.iphone
+    margin: 0 auto
+    position: absolute
+    bottom: 0   
+    left: 35%      
+
+.swiper-container-horizontal
+    max-width: 740px
+    margin: 0 auto
+    
+
+.swiper
+    &-pagination
+        &-bullet
+            &-active
+                display: none
+    &-button
+        &-prev
+            justify-content: start
+            display: flex
+            bottom: 260px
+            top: auto
+            background-size: 42px
+            width: 60px
+            height: 14px
+            &::after
+                display: none
+        &-next
+            justify-content: flex-end
+            display: flex
+            bottom: 260px
+            top: auto
+            background-size: 42px
+            width: 60px
+            height: 14px
+            &::after
+                display: none        
+        &-prev
+            background: url('../img/prev.svg') no-repeat center
+            left: -1px 
+            &::before
+                display: flex
+                content: 'Комиссия'
+                color: #061826
+                font-family: 'Roboto-Light', sans-serif
+                font-size: 16px
+                margin-top: 5rem
+                font-weight: 300
+                
+        &-next
+            background: url('../img/next.svg') no-repeat center
+            &::before
+                display: flex
+                content: 'Вознаграждение'
+                color: #061826
+                font-family: 'Roboto-Light', sans-serif
+                font-size: 16px
+                margin-top: 5rem
+                font-weight: 300  
+.swiper
+    &-container
+        
+        margin: 0 auto
+    &-image
+        display: flex
+        margin: 0 auto
+        margin-top: 15.5rem 
+        margin-bottom: 3rem
+    &-title
+        text-align: center 
+        font-family: 'Roboto', sans-serif
+        font-size: 24px 
+        font-weight: 700
+    &-text
+        font-family: 'MyriadPro', sans-serif
+        font-size: 1.24rem
+        display: flex
+        text-align: center
+        max-width: 10.70rem
+        line-height: 1.4
+
+.swiper-slide
+    display: flex
+    justify-content: center              
+.swiper-scrollbar
+    background: none 
+.swiper-scrollbar-drag
+    display: none
+
+.swiper-slide
+    top: -10rem

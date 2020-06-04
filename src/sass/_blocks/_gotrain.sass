@@ -1,12 +1,14 @@
 .gotrain
     position: relative
-    background: #061826 url('../img/training.png') right no-repeat
+    
+    background-image: radial-gradient(circle 677px at center, #03256c 0%, #061826 100%)
     padding-top: 9.07rem
     padding-bottom: 8.5rem
     &::after
+        z-index: 99
         background: transparent
-        background: radial-gradient(circle 677px at center, #03256c 0%, #061826 100%)
-        opacity: 0.4
+        background:  url('../img/training.png') right no-repeat
+        opacity: 0.7
         content: ''
         height: 100%
         left: 0

@@ -1,3 +1,10 @@
+@media screen and (max-width: 1920px)
+    .profit
+        margin-top: -5rem
+@media screen and (max-width: 1700px)
+    .profit
+        margin-top: -15rem    
+    
 @media screen and (max-width: 1290px)
     html
         font-size: 12px
@@ -18,8 +25,14 @@
         max-width: 100% 
     .price
         &-card
+    
+    .iphone  
+        left: 34%          
                    
-
+    .slider
+        &-phone
+            &__title  
+                margin-bottom: 21rem 
 @media screen and (max-width: 1200px)
 
     .format
@@ -46,13 +59,18 @@
         &-block
             &__setting    
                 justify-content: space-evenly
+   
+
+    .iphone  
+        left: 33%             
 @media screen and (max-width: 1110px)  
     .container
         width: 95% 
     .result
         &-wrap
             justify-content: space-between       
-    
+    .iphone  
+        left: 31%
 
 
 @media screen and (max-width: 992px) 
@@ -80,7 +98,7 @@
                 flex-direction: column
                 align-items: center
             &__image     
-                max-width: 350px 
+                max-width: 25rem 
                 margin-bottom: 2rem 
     .header
         &-list
@@ -109,13 +127,50 @@
     .result
         &-wrap
             flex-wrap: wrap
+            justify-content: space-evenly
+        &-card
+            &__title
+                margin-bottom: 3rem
+            &__text
+                display: none
          
     .col-60
         align-items: center
         justify-content: center
         flex-basis: 70%  
     .col-40
-        flex-basis: 40%                           
+        flex-basis: 40%
+
+    .footer
+        padding: 4.28rem
+        &-row
+            &__up
+                flex-direction: column 
+                align-items: center
+            &__down
+                flex-direction: column
+                align-items: center    
+        &__link
+            &-title     
+                margin-bottom: 3rem   
+        &-span
+            display: none
+            
+        &-item
+            order: 0
+
+
+    .foorm
+        &-footer
+            &__arrow
+                &::before
+                    display: none
+            &__position
+                display: flex
+             
+    .iphone  
+        left: 29%
+                    
 @media screen and (max-width: 892px)   
     .row
         flex-direction: column
@@ -129,7 +184,8 @@
             &__training  
                 margin-top: 10rem  
     
-           
+    .iphone  
+        left: 27%      
   
                 
     .create
@@ -139,6 +195,10 @@
             justify-content: start
             &__subtitle
                 display: none
+
+    
+
+
 
 
 
@@ -192,7 +252,61 @@
                 flex-direction: column
         &-title
             &__position
-                text-align: center        
+                text-align: center  
+    .result
+        padding: 5rem 0
+        &-wrap
+            flex-direction: column
+            align-items: center
+
+        &-card
+            &__title
+            &__description
+                margin-bottom: 3rem
+
+    .swiper-container-horizontal
+        max-width: 640px
+    .iphone  
+        left: 24%
+    .swiper
+        &-button
+            &-next
+                &::before   
+                   font-size: 13px 
+            &-prev
+                &::before
+                   font-size: 13px 
+                 
+
+@media screen and (max-width: 700px)
+    .iphone  
+        left: 19%
+    .swiper
+        &-button
+            &-next
+                display: none
+            &-prev
+                display: none                                              
+@media screen and (max-width: 690px)
+    .iphone  
+        left: 21%  
+
+@media screen and (max-width: 620px)
+    .iphone  
+        left: 19% 
+@media screen and (max-width: 550px)
+    .slider
+        &-phone
+            &__title
+                font-size: 26px
+    .iphone  
+        left: 18%  
+@media screen and (max-width: 540px)
+    .iphone  
+        left: 14%   
+@media screen and (max-width: 490px)
+    .iphone  
+        left: 12%                                  
 @media screen and (max-width: 470px) 
     html
         font-size: 11px    
@@ -215,6 +329,14 @@
         &__links
             &-phone    
                 margin: 0
+        &-secondtitle
+            &__settings 
+                margin-bottom: 6rem       
+        &-button
+            &__training  
+                max-width: 100% 
+            &__info
+                max-width: 100%         
 
     .gotrain
         padding: 5rem 0
@@ -222,7 +344,8 @@
             max-width: 30.5rem        
 
     
-        
+    .iphone  
+        left: 10%    
     .format
         &-image
             &__image 
@@ -236,7 +359,10 @@
         &__button
             font-size: 0.8rem
             padding: 14px 20px       
-
+    .result
+        &-card
+            &__title
+                font-size: 3rem
     .form
         &__button
             
@@ -263,12 +389,51 @@
         &-title
             font-size: 2rem
         &__video
-            min-height: 19rem  
-
+            min-height: 19rem
+    .swiper
+        &-text          
+            max-width: 13.7rem
     .return
         &-link   
             font-size: 0.8rem 
             padding: 14px 20px                   
-
-    
+@media screen and (max-width: 440px)
+     
+    .swiper
+        &-image
+            max-width: 60%
+            margin-bottom: 6rem
             
+       
+         
+    .slider
+        &-phone
+            &__title
+                margin-bottom: 27rem        
+    .iphone
+        left: 5%
+@media screen and (max-width: 400px) 
+    .slider
+        &-phone
+            &__title
+                font-size: 22px
+                margin-bottom: 25rem 
+    .iphone
+        left: 2%
+@media screen and (max-width: 360px)
+    .slider
+        &-phone
+            &__title
+                margin-bottom: 21rem 
+@media screen and (max-width: 340px)
+    .slider
+        &-phone
+            &__title
+                margin-bottom: 19rem                                  
+@media screen and (max-width: 320px) 
+    .slider
+        &-phone
+            &__title
+                margin-bottom: 17rem 
+    .iphone
+        left: 0
