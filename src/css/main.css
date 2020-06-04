@@ -1031,10 +1031,11 @@ template {
   align-items: center;
   text-decoration: none;
   outline: none;
+  font-family: 'Roboto-Light', sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 43.14px;
-  color: #ffffff;
+  color: #68799a;
   width: 35px;
   height: 35px; }
   .number__link:hover {
@@ -1609,6 +1610,7 @@ template {
   .footer-image {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-right: 17px; }
     .footer-image:last-child {
       margin-right: 0; }
@@ -1652,6 +1654,23 @@ template {
     position: absolute;
     right: 15px;
     top: 34%; }
+
+.arrow-up {
+  position: fixed;
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 99;
+  left: 5%;
+  bottom: 75px;
+  width: 25px;
+  height: 25px;
+  opacity: 0.5;
+  transform: rotate(-45deg);
+  border-top: 5px solid #0842b7;
+  border-right: 5px solid #0842b7;
+  margin-right: 60px;
+  cursor: pointer; }
 
 @media screen and (max-width: 1920px) {
   .profit {
