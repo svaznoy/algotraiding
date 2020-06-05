@@ -37,8 +37,13 @@
     &-main
         text-align: center
     &-group  
+        display: flex
+        justify-content: center
+        position: relative
+        width: 100%
     &-input
-        min-width: 359px
+        width: 100%
+        max-width: 359px
         font-family: 'Roboto', sans-serif
         background: $light
         border-radius: 4px
@@ -48,12 +53,24 @@
         padding: 13px 0 13px 17px
         outline: none
         &__position
+            margin-top: 1rem
             margin-bottom: 1.614rem
     &__button
+        cursor: pointer
+        border: none
         min-width: 359px
         display: inline-block
         box-shadow: 0 12px 24px rgba($primary, 0.32)
         font-size: 1.24rem
         padding: 16px 0       
 
-        
+.invalid 
+    color: red  
+
+
+#userNameSend-error
+   position: absolute
+#userPhoneSend-error   
+   position: absolute
+#userEmailSend-error               
+   position: absolute

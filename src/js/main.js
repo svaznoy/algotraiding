@@ -1,28 +1,13 @@
-$(document).ready(function() {
-
-    var player;
-
-    $('.video__play').on('click', function onYouTubeIframeAPIReady() {
-      player = new YT.Player('player', {
-        height: '460',
-        width: '100%',
-        videoId: 'MZqtJ1IrRNI',
-        events: {
-          'onReady': videoPlay,
-        }
-      });
-    });
-    
-    function videoPlay(event) {
-      event.target.playVideo();
-    }
-
-
-
-
-});
 
 $(document).ready(function () {
+  var success = $(".success");
+  var controlForm = $("#submitcontrol");
+  var footerButton = $("#submitfooter");
+  var close = $(".success__close");
+  var valute;
+
+
+
   //initialize swiper when document ready
   var mySwiper = new Swiper(".swiper", {
     // Optional parameters
@@ -46,11 +31,24 @@ $(document).ready(function () {
 
   //nextBtn.css("left", prevBtn.width() + 400);
 
-});
 
+  var player;
 
+    $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '460',
+        width: '100%',
+        videoId: 'MZqtJ1IrRNI',
+        events: {
+          'onReady': videoPlay,
+        }
+      });
+    });
+    
+    function videoPlay(event) {
+      event.target.playVideo();
+    }
 
-$(document).ready(function () {
   /**
    * При прокрутке страницы, показываем или срываем кнопку
    */
@@ -96,6 +94,191 @@ $(document).ready(function () {
 
 
 
+  
+$().ready(function() {
+
+ 
+  $(".footer").validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // simple rule, converted to {required:true}
+      userNameForm: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhoneForm: {
+        required: true,
+        minlength: 18
+      },
+
+      userEmailForm: {
+        required: true,
+        email: true
+      },
+
+
+    },
+    messages: {
+      userNameForm: {
+        required: "Заполните Имя",
+        minlength: "имя не короче 2х символов",
+        maxlength: "Имя не больше 15ти символов",
+      },
+
+      userPhoneForm: "Заполните Телефон",
+
+      userEmailForm: {
+        required: "Заполните поле email",
+        email: "Введите корректный email name@domain.com",
+      },
+
+
+    },
+
+    submitHandler: function (form) {
+      $.ajax({
+
+        type: "POST",
+        url: "footer.php",
+        data: $(form).serialize(),
+        success: function (responce) {
+          
+          success.toggleClass('success--visible');
+
+          $(form)[0].reset();
+
+          close.on('click', function() {
+           success.removeClass('success--visible');
+          });
+
+        }
+
+      });
+
+    }
+
+  });
+
+ 
+  $(".send").validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // simple rule, converted to {required:true}
+      userNameSend: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhoneSend: {
+        required: true,
+        minlength: 18
+      },
+
+      // compound rule
+      userEmailSend: {
+        required: true,
+        email: true
+      },
+    },
+    messages: {
+      userNameSend: {
+        required: "Заполните Имя",
+        minlength: "имя не короче 2х символов",
+        maxlength: "Имя не больше 15ти символов",
+      },
+
+      userPhoneSend: "Заполните Телефон",
+
+      userEmailSend: {
+        required: "Заполните поле email",
+        email: "Введите корректный email name@domain.com",
+      }
+    },
+
+    submitHandler: function (form) {
+      $.ajax({
+
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (responce) {
+          
+          success.toggleClass('success--visible');
+
+            $(form)[0].reset();
+
+             close.on('click', function() {
+             success.removeClass('success--visible');
+            });
+
+        }
+
+      });
+    
+
+    }
+
+
+  });
+
+
+  $(".foorm-footer").validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      
+      // compound rule
+      userEmailSend: {
+        required: true,
+        email: true
+      },
+    },
+    messages: {
+      userEmail: {
+        required: "Заполните поле email",
+        email: "Введите корректный email name@domain.com",
+      }
+    },
+
+    submitHandler: function (form) {
+      $.ajax({
+
+        type: "POST",
+        url: "mail.php",
+        data: $(form).serialize(),
+        success: function (responce) {
+          
+          
+
+        $(form)[0].reset();
+
+             
+
+        }
+
+      });
+    
+
+    }
+
+
+  });
+
+
+  
+ });
+
+ $("[type=tel]").mask("+7 (000) 000-00-00", {
+  placeholder: "Телефон",
+});
+
+
+
+
+
 
   var wow = new WOW({
     boxClass: "wow", // animated element css class (default is wow)
@@ -125,6 +308,14 @@ $(document).ready(function () {
   });
 
 
+  
+
+
+
+
  
 
 });
+
+
+
