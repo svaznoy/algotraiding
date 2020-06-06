@@ -687,10 +687,10 @@ template {
   max-width: 740px;
   margin: 0 auto; }
 
-.swiper-pagination-bullet-active {
+.swiper .swiper-pagination-bullet-active {
   display: none; }
 
-.swiper-button-prev {
+.swiper .swiper-button-prev {
   justify-content: start;
   display: flex;
   bottom: 260px;
@@ -698,10 +698,10 @@ template {
   background-size: 42px;
   width: 60px;
   height: 14px; }
-  .swiper-button-prev::after {
+  .swiper .swiper-button-prev::after {
     display: none; }
 
-.swiper-button-next {
+.swiper .swiper-button-next {
   justify-content: flex-end;
   display: flex;
   bottom: 260px;
@@ -709,13 +709,13 @@ template {
   background-size: 42px;
   width: 60px;
   height: 14px; }
-  .swiper-button-next::after {
+  .swiper .swiper-button-next::after {
     display: none; }
 
-.swiper-button-prev {
+.swiper .swiper-button-prev {
   background: url("../img/prev.svg") no-repeat center;
   left: -1px; }
-  .swiper-button-prev::before {
+  .swiper .swiper-button-prev::before {
     display: flex;
     content: 'Комиссия';
     color: #061826;
@@ -724,9 +724,9 @@ template {
     margin-top: 5rem;
     font-weight: 300; }
 
-.swiper-button-next {
+.swiper .swiper-button-next {
   background: url("../img/next.svg") no-repeat center; }
-  .swiper-button-next::before {
+  .swiper .swiper-button-next::before {
     display: flex;
     content: 'Вознаграждение';
     color: #061826;
@@ -758,7 +758,7 @@ template {
   max-width: 10.70rem;
   line-height: 1.4; }
 
-.swiper-slide {
+.swiper__position .swiper-slide {
   display: flex;
   justify-content: center; }
 
@@ -768,7 +768,7 @@ template {
 .swiper-scrollbar-drag {
   display: none; }
 
-.swiper-slide {
+.swiper__position .swiper-slide {
   top: -10rem; }
 
 .gotrain {
@@ -974,8 +974,7 @@ template {
 
 .swiper-slide__list {
   display: flex;
-  flex-direction: column;
-  padding-left: 0; }
+  flex-direction: column; }
   .swiper-slide__list::marker {
     margin-left: 30px; }
   .swiper-slide__list-item {
@@ -1059,8 +1058,9 @@ template {
   line-height: 28.8px; }
 
 .homework-list {
-  padding-left: 0; }
+  padding-left: 1rem; }
   .homework-list__item {
+    max-width: 430px;
     font-family: 'Roboto-Light', sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -1107,31 +1107,7 @@ template {
   flex-direction: column; }
 
 .button-box {
-  display: flex;
-  justify-content: center;
-  position: relative; }
-  .button-box::before {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    content: '';
-    background: url("../img/grey-arrow.png") no-repeat center;
-    width: 52px;
-    height: 16px; }
-  .button-box::after {
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    content: '';
-    background: url("../img/light-arrow.png") no-repeat center;
-    width: 52px;
-    height: 16px; }
+  margin: auto; }
   .button-box__position {
     margin-top: 90px; }
 
@@ -1162,6 +1138,67 @@ template {
   font-weight: 700;
   line-height: 43.14px;
   text-transform: uppercase; }
+
+.position .swiper-button-prev {
+  justify-content: start;
+  display: flex;
+  bottom: 20px;
+  top: auto;
+  background-size: 42px;
+  width: 60px;
+  height: 14px; }
+  .position .swiper-button-prev::after {
+    display: none; }
+
+.position .swiper-button-next {
+  justify-content: flex-end;
+  display: flex;
+  bottom: 20px;
+  top: auto;
+  background-size: 42px;
+  width: 60px;
+  height: 14px;
+  border: none;
+  outline: none; }
+  .position .swiper-button-next::after {
+    display: none; }
+
+.position .swiper-button-prev {
+  background: url("../img/light-arrow.png") no-repeat center;
+  transform: rotate(180deg);
+  left: -1px;
+  border: none;
+  outline: none; }
+
+.position .swiper-button-next {
+  background: url("../img/light-arrow.png") no-repeat center; }
+
+.position .swiper-container2 {
+  max-width: 100%; }
+
+.position .swiper-container3 {
+  max-width: 1200px;
+  width: 100%; }
+
+.position .swiper-pagination-bullet {
+  width: 35px;
+  height: 35px;
+  background: none;
+  text-align: center;
+  font-family: 'Roboto-Light', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 38px;
+  opacity: 1;
+  color: #68799a; }
+
+.position .swiper-pagination-bullet-active {
+  color: #ffffff;
+  background: #06bee1; }
+
+.position .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  top: 0;
+  text-align: right; }
 
 .advantages {
   background: #eaf1f7;

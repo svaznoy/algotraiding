@@ -25,11 +25,24 @@ $(document).ready(function () {
     },
   });
 
-  var nextBtn = $(".swiper-button-next");
-  var prevBtn = $(".swiper-button-prev");
+  
   
 
-  //nextBtn.css("left", prevBtn.width() + 400);
+
+
+  var Myswiper = new Swiper('.swiper-container2', {
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="'+ className + '">' + (index + 1) + '</span>';
+      }
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 
 
   var player;
@@ -311,11 +324,13 @@ $().ready(function() {
   
 
 
-
+ 
 
  
 
 });
+
+
 
 
 
