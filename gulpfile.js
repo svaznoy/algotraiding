@@ -84,17 +84,17 @@ function fonts(done) {
 }
 
 function imageMin(done) {
-    src('./src/image/**/*.{png,jpg,jpeg}')
+    src('./src/img/**/*.{png,jpg,jpeg}')
         .pipe(tinypng({key: 'sxGrcrPytDsVyXM1JPzVl0yk2HF6KsfS',}))
-        .pipe(dest('./dist/image/'));
-    src('./src/image/**/*.webp')
-        .pipe(dest('./dist/image/'));
-    src('./src/image/**/*.svg')
-        .pipe(dest('./dist/image/'));
+        .pipe(dest('./dist/img/'));
+    src('./src/img/**/*.webp')
+        .pipe(dest('./dist/img/'));
+    src('./src/img/**/*.svg')
+        .pipe(dest('./dist/img/'));
     done();
 }
 
 exports.serve = bs;
-exports.build = series(buildCss, html);
+exports.build = series(buildCss, buildJs, html, php, fonts, imageMin);
 
 //, buildCss, buildJs, html, php, fonts, imageMin
