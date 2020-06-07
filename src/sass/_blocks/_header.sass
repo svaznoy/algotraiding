@@ -17,21 +17,22 @@
                     width: 25px
                     height: 27px
                     margin-right: 1rem
+                    
         &__item
             &:nth-child(1)
-                margin-right: 1rem 
+                margin-right: 2rem
             &:nth-child(5)
                 margin-left: 7rem                 
         &__links
             text-transform: uppercase
-            font-family: 'Roboto', sans-serif
+            font-family: 'Black', sans-serif
+            font-weight: 900
             font-size: 1rem
             letter-spacing: 1.12px
             font-weight: 700
             color: $darken
             text-decoration: none
             outline: none
-            margin-left: 3rem
             &:hover
                 content:  ''
                 width: 100%
@@ -42,9 +43,9 @@
             &--grey
                 color: $grey
             &--logo
-                font-family: 'Roboto', sans-serif
-                font-weight: 700
-                font-size: 1.514rem
+                display: flex
+                font-family: 'Roboto Bold', sans-serif
+                font-size: 1.479rem
                 line-height: 28.8px
                 text-transform: uppercase
                 color: $darken
@@ -61,10 +62,24 @@
                 margin-left: auto
                 line-height: 28.8px
                 letter-spacing: 0.3px
+                &:hover
+                    content:  ''
+                    width: 100%
+                    border-bottom: 2px solid $primary
+                    padding-bottom: 31px
+                    border-radius: 2px
                 &--grey
                   color: $grey
                   font-weight: 300
                 
-            
-                
-           
+.hover
+    margin-right: 1rem
+
+.position
+    &-links
+        margin-right: 3rem
+.position
+    &-analiticks 
+        margin-right: 1.1rem 
+    &-phone
+        margin-right: 1rem         

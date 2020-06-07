@@ -33,6 +33,12 @@
         &-phone
             &__title  
                 margin-bottom: 21rem 
+@media screen and (max-width: 1250px)  
+    .profit 
+        &-box  
+            &--bigsize 
+                font-size: 300px
+
 @media screen and (max-width: 1200px)
 
     .format
@@ -51,6 +57,25 @@
     .form-footer-input__position
         min-width: 30rem
         margin-bottom: 1.5rem   
+    .lesson
+        padding: 80px 0 170px 0
+
+    .position .swiper-pagination-bullet
+        font-size: 12px 
+        width: 25px
+        height: 25px 
+        line-height: 25px 
+
+    .swiper
+        &-slide
+            &__lesson
+                font-size: 25px
+            &__list
+                &-text
+                    font-size: 20px
+
+
+
 
     .time
         &-title
@@ -62,7 +87,20 @@
    
 
     .iphone  
-        left: 33%             
+        left: 33% 
+    .profit 
+        &-box  
+            &--bigsize 
+                font-size: 250px 
+@media screen and (max-width: 1170px) 
+    .profit 
+        &-box
+            &__item
+                justify-content: space-between 
+            &--bigsize 
+                font-size: 200px  
+            &--decor
+                margin: 0                                   
 @media screen and (max-width: 1110px)  
     .container
         width: 95% 
@@ -75,7 +113,7 @@
 
 @media screen and (max-width: 992px) 
     .hero
-        background-position: left
+        background-size: cover
         &-title    
             font-size: 4rem
         &-text
@@ -84,7 +122,7 @@
                 bottom: 17%
         &-button
             &__training
-                margin-top: 16rem
+                margin-top: 10rem
     .format
         &-card
             align-items: center
@@ -104,14 +142,14 @@
         &-list
             &__item 
             &__links
-                display: none    
-                
-                             
+                display: none                             
             &__logo--image
                 
                 visibility: visible
             &__phone  
                 visibility: visible 
+
+       
 
     .price
         &-card
@@ -142,7 +180,7 @@
         flex-basis: 40%
 
     .footer
-        padding: 4.28rem
+        padding: 50px 0
         &-row
             &__up
                 flex-direction: column 
@@ -170,7 +208,39 @@
              
     .iphone  
         left: 29%
-                    
+    .profit 
+        margin-top: -19rem
+        &-box 
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: center
+            &__item
+                margin-right: 4rem
+                margin-bottom: 2rem
+               
+            &--bigsize 
+                font-size: 200px
+                &-title
+                    text-align: center
+            &--decor
+                margin: 0
+            &__title
+                margin: 0 auto     
+               
+    .why
+        &-robot
+            display: none 
+
+    .lesson
+        &-wrap
+            flex-direction: column
+            align-items: center
+    .position .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
+        left: 10%
+        text-align: center
+             
+                                            
 @media screen and (max-width: 892px)   
     .row
         flex-direction: column
@@ -179,11 +249,12 @@
         min-height: 800px
         &-text
             &__position
-                bottom: 24%
+                bottom: 30%
         &-button
             &__training  
-                margin-top: 10rem  
-    
+                margin-top: 15rem  
+    .profit 
+        margin-top: -10rem
     .iphone  
         left: 27%      
   
@@ -196,10 +267,18 @@
             &__subtitle
                 display: none
 
-    
 
+    .swiper .swiper-button-next
+        display: none
+    .swiper .swiper-button-prev
+        display: none
 
-
+    .position .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
+        display: none
+    .position .swiper-button-next
+        display: none
+    .position .swiper-button-prev
+        display: none        
 
 
 @media screen and ( max-width: 735px )
@@ -217,7 +296,13 @@
                 margin-top: 0rem
         &-text
             &__position 
-                display: none             
+                display: none  
+
+    .profit 
+        margin-top: 0
+    .button
+        &-container      
+            margin-top: 10rem             
     .table
         display: flex
         &-input
@@ -294,13 +379,41 @@
 @media screen and (max-width: 620px)
     .iphone  
         left: 19% 
+
+    .button
+        &-box
+            display: flex
+            flex-direction: column
+        &__more
+            width: 100%    
+       
+            
+            
 @media screen and (max-width: 550px)
     .slider
         &-phone
             &__title
                 font-size: 26px
     .iphone  
-        left: 18%  
+        left: 18%
+    .lesson
+        padding: 50px 0 60px 0
+
+    .col-50
+        width: 100%     
+    .button
+        &-box
+            &__position
+                margin-top: 2rem      
+    .bonus
+        display:   
+    .homework
+        &-list
+            list-style: none
+
+    .number
+        &-title
+            display: none           
 @media screen and (max-width: 540px)
     .iphone  
         left: 14%   
@@ -421,6 +534,8 @@
     .iphone
         left: 2%
 @media screen and (max-width: 360px)
+    .profit 
+        margin-top: 5rem
     .slider
         &-phone
             &__title
@@ -430,7 +545,11 @@
         &-phone
             &__title
                 margin-bottom: 19rem                                  
-@media screen and (max-width: 320px) 
+@media screen and (max-width: 320px)
+
+    .button
+        &-container
+            margin-top: 3rem 
     .slider
         &-phone
             &__title

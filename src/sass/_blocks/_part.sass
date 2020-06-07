@@ -1,4 +1,5 @@
 .part
+    padding-top: 80px
     &-wrap
         display: flex
         flex-direction: column
@@ -7,15 +8,19 @@
         font-family: 'Roboto', sans-serif
         font-size: 2.571rem
         font-weight: 300
+        margin-bottom: 0.7rem
         &--bold
-            font-weight: 700
+            font-family: 'Black', sans-serif
+            font-weight: 300
+            
     &-text
         text-align: center
         max-width: 24.85rem
         font-weight: 300
         font-family: 'Roboto-Light', sans-serif
-        font-size: 1.114rem
+        font-size: 1.134rem
         line-height: 24px
+        margin-bottom: 0
     &-item
         font-family: 'Roboto-Light', sans-serif
         font-size: 1.714rem
@@ -24,12 +29,11 @@
             content: ''
             display: flex
             margin: auto
-            margin-top: 2rem
-            margin-bottom: 2rem
+            margin: 3.2rem auto
             width: 47px
             height: 2px
             transform: rotate(90deg)
-            background: $line
+            background: $darken
     .video
         &__play
             position: relative
@@ -42,15 +46,15 @@
         margin: 0 auto
         max-width: 67.37rem
         min-height: 27.5rem  
-        background:  url(../img/video.png) center no-repeat
-        margin-top: 5rem
-        margin-bottom: 3.8rem
+        background:  url(../img/video.jpg) center no-repeat
+        margin-top: 6.4rem
+        margin-bottom: 3.4rem
        
     &-subtitle
-        font-family: 'Roboto', sans-serif
+        font-family: 'Roboto Bold', sans-serif
         font-size: 1.714rem
         &__position
-            margin-bottom: 0.8rem
+            margin-bottom: 0.6rem
         
 
     &-answer
@@ -60,11 +64,12 @@
         max-width: 41rem
         line-height: 24px
         &__position
-            margin-bottom: 2.6rem
+            margin-bottom: 2.8rem
 
     &__button
-        font-size: 1.214rem 
-        padding: 16px 44px
+        font-family: 'Roboto-Light', sans-serif
+        font-size: 1.225rem 
+        padding: 15px 42px
         box-shadow: 0 12px 24px rgba(6, 57, 158, 0.32)
         margin-bottom: 8.57rem   
         

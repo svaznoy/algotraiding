@@ -32,7 +32,7 @@ $(document).ready(function () {
 
   var Myswiper = new Swiper('.swiper-container2', {
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-pagination2',
       clickable: true,
       renderBullet: function (index, className) {
         return '<span class="'+ className + '">' + (index + 1) + '</span>';
@@ -44,6 +44,7 @@ $(document).ready(function () {
     },
   });
 
+  var Videoswiper = new Swiper('.swiper-container4');
 
   var player;
 
@@ -57,6 +58,8 @@ $(document).ready(function () {
         }
       });
     });
+
+ 
     
     function videoPlay(event) {
       event.target.playVideo();
@@ -266,7 +269,11 @@ $().ready(function() {
           
           
 
-        $(form)[0].reset();
+          $(form)[0].reset();
+
+          close.on('click', function() {
+          success.removeClass('success--visible');
+         });
 
              
 
@@ -310,14 +317,14 @@ $().ready(function() {
       event.preventDefault();
       var id  = $(this).attr('href'),
           top = $(id).offset().top;
-      $('body,html').animate({scrollTop: top}, 6500); 
+      $('body,html').animate({scrollTop: top}, 2500); 
   });
 
   $("#foot").on("click","a", function (event) {
     event.preventDefault();
     var id  = $(this).attr('href'),
         up = $(id).offset().up;
-    $('body,html').animate({scrollTop: up}, 6250);
+    $('body,html').animate({scrollTop: up}, 2250);
   });
 
 

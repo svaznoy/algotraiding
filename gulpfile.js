@@ -83,6 +83,7 @@ function fonts(done) {
     done();
 }
 
+
 function imageMin(done) {
     src('./src/img/**/*.{png,jpg,jpeg}')
         .pipe(tinypng({key: 'sxGrcrPytDsVyXM1JPzVl0yk2HF6KsfS',}))
@@ -95,6 +96,6 @@ function imageMin(done) {
 }
 
 exports.serve = bs;
-exports.build = series(buildCss, buildJs, html, php, fonts, imageMin);
+exports.build = series(buildJs, php);
 
 //, buildCss, buildJs, html, php, fonts, imageMin
