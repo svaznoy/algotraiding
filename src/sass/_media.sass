@@ -5,7 +5,7 @@
     .profit
         margin-top: -15rem    
     
-@media screen and (max-width: 1290px)
+@media screen and (max-width: 1295px)
     html
         font-size: 12px
     .create
@@ -33,6 +33,28 @@
         &-phone
             &__title  
                 margin-bottom: 21rem 
+    .table-first__row 
+        display: flex  
+
+    .format-image__block-title
+        top: 40px 
+    .format-image__block-subtitle
+        top: 170px     
+    .format-image__block-subtitle-right
+        top: 170px          
+
+    div#user-name-error.invalid
+        position: absolute
+        top: 50px
+    div#user-phone-error.invalid 
+        position: absolute
+        top: 135px
+    div#user-email-error.invalid 
+        position: absolute
+        top: 220px      
+    div#modalcheckbox-error.invalid 
+        position: absolute
+        top: 275px          
 @media screen and (max-width: 1250px)  
     .profit 
         &-box  
@@ -83,13 +105,16 @@
                 margin: auto
         &-block
             &__setting    
-                justify-content: space-evenly
+                display: flex
+    
+                   
    
 
     .iphone  
         left: 33% 
     .profit 
-        &-box  
+        &-box 
+            justify-content: space-between
             &--bigsize 
                 font-size: 250px 
 @media screen and (max-width: 1170px) 
@@ -100,7 +125,13 @@
             &--bigsize 
                 font-size: 200px  
             &--decor
-                margin: 0                                   
+                margin: 0
+    .format-image__block-title
+        top: 20px 
+    .format-image__block-subtitle
+        top: 130px     
+    .format-image__block-subtitle-right
+        top: 130px                                                  
 @media screen and (max-width: 1110px)  
     .container
         width: 95% 
@@ -109,7 +140,18 @@
             justify-content: space-between       
     .iphone  
         left: 31%
-
+    .create
+        &-block
+            justify-content: center
+    .table-first
+        flex-direction: column 
+        align-items: flex-start 
+    .table-second
+        align-items: flex-start 
+        flex-direction: column
+        
+        &__row
+            border: none
 
 @media screen and (max-width: 992px) 
     .hero
@@ -123,6 +165,47 @@
         &-button
             &__training
                 margin-top: 10rem
+                box-shadow: none
+            &__info
+                box-shadow: none
+
+
+    .form
+        &-button  
+            box-shadow: none 
+
+    .gotrain
+        &-link 
+            &__settings   
+                box-shadow: none  
+    .part
+        &__button
+            box-shadow: none
+
+    .button  
+        &__more
+            box-shadow: none 
+        &__begin
+            box-shadow: none            
+    .price
+        &__button
+            box-shadow: none
+    .form
+        &__button
+            box-shadow: none
+
+    .return     
+        &-link   
+            &__settings
+                box-shadow: none
+    .form
+        &-footer 
+            &__button 
+                box-shadow: none
+    .footer 
+        &-image  
+            &__container 
+                 box-shadow: none                   
     .format
         &-card
             align-items: center
@@ -196,8 +279,17 @@
             
         &-item
             order: 0
-
-
+    .time
+        &-block
+            &__setting
+                margin: auto
+                margin-top: 5rem
+    .time-block__item
+        margin-top: 5rem
+        margin-right: auto
+        margin-bottom: 3rem
+                
+            
     .foorm
         &-footer
             &__arrow
@@ -211,13 +303,31 @@
     .profit 
         margin-top: -19rem
         &-box 
-            display: flex
+            
             flex-wrap: wrap
-            align-items: center
             justify-content: center
+            
             &__item
-                margin-right: 4rem
-                margin-bottom: 2rem
+                display: flex
+                flex-direction: column
+                align-items: center
+                flex-basis: 100%
+                
+               
+            &__text
+                margin-right: 0
+                text-align: center
+                margin-bottom: 3rem
+                text-align: center
+            &__position, &__position2   
+                margin-right: 0 
+        .position-title1, .position-title2
+            text-align: center
+
+
+                
+                
+                
                
             &--bigsize 
                 font-size: 200px
@@ -239,8 +349,20 @@
     .position .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
         left: 10%
         text-align: center
-             
-                                            
+    .format-image__image
+        max-width: 400px    
+    .format-image__block-title
+        font-size: 18px
+        top: 20px
+        left: 15px 
+    .format-image__block-subtitle
+        font-size: 15px
+        top: 100px 
+        left: 15px     
+    .format-image__block-subtitle-right
+        font-size: 15px
+        top: 100px 
+        left: 15px                                         
 @media screen and (max-width: 892px)   
     .row
         flex-direction: column
@@ -254,31 +376,38 @@
             &__training  
                 margin-top: 15rem  
     .profit 
-        margin-top: -10rem
+        margin-top: -6rem
     .iphone  
         left: 27%      
   
                 
     .create
+        &-wrap
+            display: flex
+            flex-direction: column
         &-block
             display: flex
             flex-direction: column
             justify-content: start
+            align-items: center
             &__subtitle
                 display: none
-
+    .form-button__position
+        margin: 0 auto
+        margin-top: 3rem
 
     .swiper .swiper-button-next
-        display: none
+        right: 0
     .swiper .swiper-button-prev
-        display: none
+        left: 0
 
     .position .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
         display: none
     .position .swiper-button-next
-        display: none
+        bottom: 100px
     .position .swiper-button-prev
-        display: none        
+        bottom: 100px
+               
 
 
 @media screen and ( max-width: 735px )
@@ -300,22 +429,25 @@
 
     .profit 
         margin-top: 0
+        &-box
+            &__item
+                margin: auto
     .button
         &-container      
             margin-top: 10rem             
     .table
-        display: flex
+        
         &-input
             padding: 15px 0 15px 15px
         &-first
             &__row
                 display: flex
-                justify-content: start
                 align-items: baseline
         &-second
+            display: flex
+            justify-content: start
             &__row
                 display: flex
-                justify-content: start
                 align-items: baseline
                 border: none
     
@@ -332,9 +464,10 @@
                 margin: auto 
                 margin-bottom: 2rem 
             &__setting
+                flex-wrap: wrap
                 margin-top: 3rem
-                text-align: center
-                flex-direction: column
+                text-align: left
+                
         &-title
             &__position
                 text-align: center  
@@ -352,7 +485,7 @@
     .swiper-container-horizontal
         max-width: 640px
     .iphone  
-        left: 24%
+        left: 25%
     .swiper
         &-button
             &-next
@@ -361,7 +494,17 @@
             &-prev
                 &::before
                    font-size: 13px 
-                 
+    .success 
+        &__popup     
+            max-width: 40rem
+        &-title
+            font-size: 1.6rem
+
+        &-subtitle
+            max-width: 220px
+            text-align: center
+            font-size: 1.3rem 
+
 
 @media screen and (max-width: 700px)
     .iphone  
@@ -371,11 +514,55 @@
             &-next
                 display: none
             &-prev
-                display: none                                              
+                display: none  
+
+@media screen and ( max-height:  670px) 
+    .modal
+        z-index: 99
+        &__close
+            width: 1rem
+            height: 1rem
+        &__dialog
+            top: 20px
+            max-width: 30rem
+            
+        &__title
+            max-width: 20rem
+            font-size: 1.1rem 
+            margin-bottom: 1.5rem  
+        &__input-group
+            margin-bottom: 2rem
+        &__button  
+            padding: 10px 16px    
+    .policy__label::before
+        width: 13px
+        height: 13px    
+
+
+    div#user-name-error.invalid
+        position: absolute
+        top: 45px
+    div#user-phone-error.invalid 
+        position: absolute
+        top: 117px
+    div#user-email-error.invalid 
+        position: absolute
+        top: 180px      
+    div#modalcheckbox-error.invalid 
+        position: absolute
+        top: 220px 
+        font-size: 1rem                                                                       
 @media screen and (max-width: 690px)
     .iphone  
         left: 21%  
-
+    .swiper .swiper-button-next
+        right: 0
+        &::before
+            display: none
+    .swiper .swiper-button-prev
+        left: 0
+        &::before
+            display: none
 @media screen and (max-width: 620px)
     .iphone  
         left: 19% 
@@ -387,8 +574,22 @@
         &__more
             width: 100%    
        
-            
-            
+    .time-block__item
+        flex-basis: 100%  
+        align-items: center 
+
+    .position .swiper-button-next
+        bottom: 50px
+    .position .swiper-button-prev
+        bottom: 50px      
+@media screen and ( max-width: 560px )
+    .iphone  
+        left: 17% 
+    .swiper .swiper-button-next
+        right: 25%
+    .swiper .swiper-button-prev
+        left: 25%
+                
 @media screen and (max-width: 550px)
     .slider
         &-phone
@@ -413,13 +614,25 @@
 
     .number
         &-title
-            display: none           
+            display: none 
+
+                
 @media screen and (max-width: 540px)
     .iphone  
-        left: 14%   
+        left: 14% 
+    .swiper .swiper-button-next
+        right: 20%
+    .swiper .swiper-button-prev
+        left: 20%        
 @media screen and (max-width: 490px)
     .iphone  
-        left: 12%                                  
+        left: 12% 
+    .bonus
+        margin-bottom: 3rem
+    .position .swiper-button-next
+        bottom: 150px
+    .position .swiper-button-prev
+        bottom: 150px                                        
 @media screen and (max-width: 470px) 
     html
         font-size: 11px    
@@ -462,7 +675,7 @@
     .format
         &-image
             &__image 
-                width: 90%
+                width: 100%
     .part
         &__video
             min-height: 19rem
@@ -509,7 +722,62 @@
     .return
         &-link   
             font-size: 0.8rem 
-            padding: 14px 20px                   
+            padding: 14px 20px 
+
+    .swiper .swiper-button-next
+        right: 17%
+    .swiper .swiper-button-prev
+        left: 17%        
+@media screen and ( max-height: 420px )
+    .modal
+        top: -20px
+        &__close
+            width: 0.5rem
+            height: 0.5rem
+        &__dialog
+            max-width: 25rem
+            padding: 10px 15px     
+        &__title
+            margin: auto
+            max-width: 15rem
+            font-size: 1rem 
+            margin-bottom: 1.5rem  
+        &__input-group
+            margin-bottom: 2rem
+            &:last-of-type
+                margin-bottom: 1rem
+        &__button  
+            font-size: 0.8rem
+            padding: 10px 15px 
+        &__policy
+            margin-top: -1rem
+            margin-bottom: 2rem 
+
+    div#user-name-error.invalid
+        position: absolute
+        top: 25px
+        font-size: 0.9rem
+    div#user-phone-error.invalid 
+        position: absolute
+        top: 75px
+    div#user-email-error.invalid 
+        position: absolute
+        font-size: 0.8rem
+        top: 130px       
+    div#modalcheckbox-error.invalid 
+        position: absolute
+        top: 158px 
+        font-size: 0.75rem      
+
+    .form
+        &__label
+            font-size: 1rem        
+    .input
+        font-size: 1rem
+        padding: 0           
+    .policy
+        &__label
+            font-size: 1rem        
 @media screen and (max-width: 440px)
      
     .swiper
@@ -525,6 +793,26 @@
                 margin-bottom: 27rem        
     .iphone
         left: 5%
+
+    .swiper .swiper-button-next
+        right: 9%
+    .swiper .swiper-button-prev
+        left: 9%  
+
+    div#user-name-error.invalid
+        position: absolute
+        top: 38px
+        font-size: 0.9rem
+    div#user-phone-error.invalid 
+        position: absolute
+        top: 123px
+    div#user-email-error.invalid 
+        position: absolute
+        top: 200px      
+    div#modalcheckbox-error.invalid 
+        position: absolute
+        top: 253px 
+        font-size: 0.95rem            
 @media screen and (max-width: 400px) 
     .slider
         &-phone
@@ -533,6 +821,22 @@
                 margin-bottom: 25rem 
     .iphone
         left: 2%
+
+    
+    .format-image__image
+        max-width: 400px   
+    .format-image__block-title
+        font-size: 18px
+        top: 20px
+        left: 2px 
+    .format-image__block-subtitle
+        font-size: 15px
+        top: 100px 
+        left: 2px     
+    .format-image__block-subtitle-right
+        font-size: 15px
+        top: 100px 
+        left: 2px          
 @media screen and (max-width: 360px)
     .profit 
         margin-top: 5rem

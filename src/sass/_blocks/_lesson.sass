@@ -6,6 +6,7 @@
         position: relative
         display: flex
         
+        
 .swiper
     &-slide
         &__lesson 
@@ -15,19 +16,25 @@
             line-height: 42px
             color: $light
             margin-top: 0
+            margin-bottom: 5rem
         &__about-title 
             font-family: 'Roboto', sans-serif
             font-size: 24px
             font-weight: 700
             line-height: 28.8px 
             color: $light 
+            
         &__list
             display: flex
             flex-direction: column
+            margin-top: 1rem
+            
+            padding-left: 1.5rem
             &::marker
                 margin-left: 30px
             
             &-item
+                
                 font-family: 'Roboto', sans-serif
                 font-size: 16px
                 font-weight: 300
@@ -35,7 +42,7 @@
                 text-transform: uppercase 
                 color: $ol 
                 padding-right: 16px
-                margin-bottom: 16px   
+                margin-bottom: 20px   
         &__list-text
             display: flex
             margin-left: 1rem
@@ -58,10 +65,12 @@
             font-weight: 300
             line-height: 24px
             color: $ol
+            margin-left: 2rem
 .col-50
     &__wrap
         display: flex
         flex-direction: column
+        text-align: left
 
     
 .number
@@ -103,12 +112,14 @@
         height: 1px
         background: $line-lesson
     &__title
-        font-family: 'Roboto-Light', sans-serif
-        font-weight: 500
+        font-family: 'Roboto Bold', sans-serif
+        font-weight: 700
         color: $light
         font-size: 24px
         font-weight: 700
         line-height: 28.8px
+        margin-top: 4.8rem
+        margin-bottom: 2.7rem
     &-list
         padding-left: 1rem
         &__item
@@ -137,7 +148,7 @@
         flex-direction: column
         align-items: flex-start
         &__title
-            margin-top: 79px
+            margin-top: 84px
             font-family: 'Roboto', sans-serif
             color: $light
             font-size: 24px
@@ -165,7 +176,7 @@
     &-box
         margin: auto
         &__position
-            margin-top: 90px
+            margin-top: 40px
     &__more
         border-style: none
         background: none
@@ -180,6 +191,10 @@
         text-transform: uppercase
         margin-right: 30px
         cursor: pointer
+        box-shadow: 0px 2px 25px rgba($primary, 0.6)
+        &:hover
+            transition: box-shadow 0.3s
+            box-shadow: none 
         
     &__begin
        
@@ -196,6 +211,10 @@
         line-height: 43.14px
         text-transform: uppercase 
         cursor: pointer
+        box-shadow: 0px 2px 25px rgba($primary, 0.6)
+        &:hover
+            transition: box-shadow 0.3s
+            box-shadow: none 
        
 
   
@@ -265,5 +284,7 @@
 .position .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
     top: 0
     text-align: right
+.position .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
+    margin: 0 5px    
    
 

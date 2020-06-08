@@ -4,7 +4,22 @@ $(document).ready(function () {
   var controlForm = $("#submitcontrol");
   var footerButton = $("#submitfooter");
   var close = $(".success__close");
+  var modalCl = $("#submitmodal");
   var valute;
+  var modal = $(".modal"),
+    modalBtn = $("[data-toggle=modal]"),
+    modalClose = $(".modal__close");
+
+
+
+  modalBtn.on("click", function () {
+    modal.toggleClass("modal--visible");
+  });
+  modalClose.on("click", function () {
+    $("#mainmodal")[0].reset();
+    modal.toggleClass("modal--visible");
+    
+  });
 
 
 
@@ -14,7 +29,7 @@ $(document).ready(function () {
     loop: true,
     pagination: {
       el: ".swiper-pagination",
-
+    
     },
     navigation: {
       nextEl: ".swiper-button-next",
@@ -22,7 +37,7 @@ $(document).ready(function () {
     },
     scrollbar: {
       el: '.swiper-scrollbar',
-    },
+    }
   });
 
   
@@ -31,6 +46,7 @@ $(document).ready(function () {
 
 
   var Myswiper = new Swiper('.swiper-container2', {
+    
     pagination: {
       el: '.swiper-pagination2',
       clickable: true,
@@ -58,6 +74,18 @@ $(document).ready(function () {
         }
       });
     });
+
+    $('.video__play2').on('click', function onYouTubeIframeAPIReady() {
+      player = new YT.Player('players', {
+        height: '460',
+        width: '100%',
+        videoId: 'MZqtJ1IrRNI',
+        events: {
+          'onReady': videoPlay,
+        }
+      });
+    });
+
 
  
     
@@ -112,6 +140,83 @@ $(document).ready(function () {
 
   
 $().ready(function() {
+
+
+  $(".modal-val").validate({
+    errorPlacement: function(error, element) {
+      if (element.attr("type") == "checkbox") {
+        return element.next('label').append(error);
+      }  
+      error.insertAfter($(element));
+    },
+
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // simple rule, converted to {required:true}
+      userNameModal: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhoneModal: {
+        required: true,
+        minlength: 18
+      },
+
+      // compound rule
+      userEmailModal: {
+        required: true,
+        email: true
+      },
+      modalcheckbox: {
+        required: true
+      },
+    },
+    messages: {
+      userNameModal: {
+        required: "Заполните Имя",
+        minlength: "имя не короче 2х символов",
+        maxlength: "Имя не больше 15ти символов",
+      },
+
+      userPhoneModal: "Заполните Телефон",
+
+      userEmailModal: {
+        required: "Заполните поле email",
+        email: "Введите корректный email name@domain.com",
+      },
+      modalcheckbox: "Примите соглашение конфидициальности"
+         
+      
+    },
+
+   
+    submitHandler: function (form) {
+      $.ajax({
+
+        type: "POST",
+        url: "modal.php",
+        data: $(form).serialize(),
+        success: function (responce) {
+          
+          $(form)[0].reset();
+
+          modal.removeClass('modal--visible');
+          success.toggleClass('success--visible');
+          close.on('click', function() {
+          success.removeClass('success--visible');
+          });
+
+        }
+
+      });
+    
+
+    }
+
+
+  });
 
  
   $(".footer").validate({

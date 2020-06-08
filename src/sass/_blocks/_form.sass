@@ -1,6 +1,6 @@
 .form
     position: relative
-    padding: 9.14rem 0
+    padding: 120px 0
     background: #031942  url('../img/keyboard.webp') center no-repeat
     background-size: cover
     &::after
@@ -14,13 +14,17 @@
         top: 0
         width: 100%
     &-wrap
-        position: relative  
+        position: relative 
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center 
         z-index: 99  
     &__title
         margin: auto
         text-align: center
-        font-family: 'Roboto', sans-serif
-        font-size: 1.75rem
+        font-family: 'Roboto Bold', sans-serif
+        font-size: 1.73rem
         color: $light
         max-width: 30rem
         margin-bottom: 1.714rem
@@ -31,8 +35,8 @@
         color: $light
         text-align: center
         margin: auto  
-        max-width: 30rem  
-        margin-bottom: 3.214rem
+        max-width: 425px
+        margin-bottom: 2.7rem
         line-height: 24px
     &-main
         text-align: center
@@ -53,8 +57,7 @@
         padding: 13px 0 13px 17px
         outline: none
         &__position
-            margin-top: 1rem
-            margin-bottom: 1.614rem
+            margin-bottom: 1.8rem
     &__button
         cursor: pointer
         border: none
@@ -62,7 +65,11 @@
         display: inline-block
         box-shadow: 0 12px 24px rgba($primary, 0.32)
         font-size: 1.24rem
-        padding: 16px 0       
+        padding: 16px 0 
+        box-shadow: 0px 2px 25px rgba($primary, 0.6)
+        &:hover
+            transition: box-shadow 0.3s
+            box-shadow: none       
 
 .invalid 
     color: red  
@@ -74,3 +81,4 @@
    position: absolute
 #userEmailSend-error               
    position: absolute
+
